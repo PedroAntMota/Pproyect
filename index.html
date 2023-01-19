@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Login | Deathgun</title>
+	<link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <audio src="audio/Backstreet%20Boys%20-%20Everybody%20(Backstreet's%20Back)%20-%20Lyrics.mp3" autoplay loop>
+    </audio>
+    <script>
+    alert('Bienvenido!!!');
+    </script>
+<div class="login-box">
+	<img class="avatar" src="img/logo.jpg">
+	<h1>Login</h1>
+	<form name = "login">
+	<!--UserName-->
+	<label for="username">Nombre de uuario</label>
+	<input type="text" placeholder="Escriba su nombre de usuario" name="userid">
+	<!--Password-->
+	<label for="Password">Contraeña</label>
+	<input type="password" placeholder="Escriba la contraseña" name="pswrd">
+
+	<input type="submit" onclick="check(this.form)" value="Login">
+	<a href="#">Olvidaste tu contraseña?</a><br>
+	<a href="#">No tienes cuenta?</a>
+	</form>
+</div>
+    <script>
+function check(form)
+{
+ 
+ if(form.userid.value == "pedro" && form.pswrd.value == "14pedro13maria")
+  {
+    window.open('http://pedrosword.000webhostapp.com/c.html')
+  }
+ else
+ {
+   alert("Contraseña o nombre de usuario son incorrecto")
+  }
+}
+</script>
+
+</body>
+</html>
